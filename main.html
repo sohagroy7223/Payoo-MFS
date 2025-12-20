@@ -10,55 +10,98 @@
 </head>
 
 <body class="bg-slate-800">
-    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+    <section class="max-w-md mx-auto py-6 bg-gray-200">
         <header>
             <nav class="flex justify-around items-center">
                 <div class="flex justify-between gap-2">
                     <img class="w-16" src="./assets/Group.png" alt="">
                     <div>
-                        <h2 class="font-bold text-2xl">$45000</h2>
+                        <h2 class="font-bold text-2xl">$4500</h2>
                         <h4 class="text-gray-600">Available Balance</h4>
                     </div>
                 </div>
                 <button class="border p-1 rounded-md text-gray-600">Log Out</button>
             </nav>
         </header>
-        <main>
-            <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200 p-5">
-                <h2 class="font-bold text-2xl">🔥 Welcome to Payooo!</h2>
-                <p class="mt-3 text-gray-700">Enjoy easy and convenient financial services with us.
-                    Cashout charge is low and
-                </p>
+    </section>
+    <main>
+        <section class="max-w-md  mx-auto py-6 bg-gray-200 p-5">
+            <h2 class="font-bold text-2xl">🔥 Welcome to Payooo!</h2>
+            <p class="mt-3 text-gray-700">Enjoy easy and convenient financial services with us.
+                Cashout charge is low and
+            </p>
 
-                <div class="card grid grid-cols-3 gap-2 mt-6">
-                    <div class="box border p-4 text-center rounded-sm">
-                        <img class="w-8 mx-auto" src=".//assets/wallet1.png" alt="">
-                        <p class="text-sm mt-2">Add Money</p>
-                    </div>
-                    <div class="box border p-4 text-center rounded-sm">
-                        <img class="w-8 mx-auto" src=".//assets/send1.png" alt="">
-                        <p class="text-sm mt-2">Cashout</p>
-                    </div>
-                    <div class="box border p-4 text-center rounded-sm">
-                        <img class="w-8 mx-auto" src=".//assets/money1.png" alt="">
-                        <p class="text-sm mt-2">Transfer Money</p>
-                    </div>
-                    <div class="box border p-4 text-center rounded-sm">
-                        <img class="w-8 mx-auto" src=".//assets/bonus1.png" alt="">
-                        <p class="text-sm mt-2">Get Bonus</p>
-                    </div>
-                    <div class="box border p-4 text-center rounded-sm">
-                        <img class="w-8 mx-auto" src=".//assets/purse1.png" alt="">
-                        <p class="text-sm mt-2">Pay Bill</p>
-                    </div>
-                    <div class="box border p-4 text-center rounded-sm">
-                        <img class="w-8 mx-auto" src=".//assets/transaction1.png" alt="">
-                        <p class="text-sm mt-2">Transactions</p>
+            <div class="card grid grid-cols-3 gap-2 mt-6">
+                <div class="box border p-4 text-center rounded-sm">
+                    <img class="w-8 mx-auto" src=".//assets/wallet1.png" alt="">
+                    <p class="text-sm mt-2">Add Money</p>
+                </div>
+                <div class="box border p-4 text-center rounded-sm">
+                    <img class="w-8 mx-auto" src=".//assets/send1.png" alt="">
+                    <p class="text-sm mt-2">Cashout</p>
+                </div>
+                <div class="box border p-4 text-center rounded-sm">
+                    <img class="w-8 mx-auto" src=".//assets/money1.png" alt="">
+                    <p class="text-sm mt-2">Transfer Money</p>
+                </div>
+                <div class="box border p-4 text-center rounded-sm">
+                    <img class="w-8 mx-auto" src=".//assets/bonus1.png" alt="">
+                    <p class="text-sm mt-2">Get Bonus</p>
+                </div>
+                <div class="box border p-4 text-center rounded-sm">
+                    <img class="w-8 mx-auto" src=".//assets/purse1.png" alt="">
+                    <p class="text-sm mt-2">Pay Bill</p>
+                </div>
+                <div class="box border p-4 text-center rounded-sm">
+                    <img class="w-8 mx-auto" src=".//assets/transaction1.png" alt="">
+                    <p class="text-sm mt-2">Transactions</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-md -10  mx-auto py-6 bg-gray-200 p-5">
+
+            <h2 class="font-bold text-xl">Add Money</h2>
+
+            <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <fieldset class="fieldset">
+                                <legend class="fieldset-legend text-base">Select A Bank</legend>
+                                <select class="select rounded-xl">
+                                    <option disabled selected>select bank</option>
+                                    <option>bKash</option>
+                                    <option>Nagad</option>
+                                    <option>Rupali bank</option>
+                                </select>
+                            </fieldset>
+
+                            <fieldset class="fieldset">
+                                <label class="label">Account Number</label>
+                                <input value="01311976179" id="account-number" type="number" class="input rounded-xl"
+                                    placeholder="Account Number" required />
+
+                                <label class="label">amount</label>
+                                <input id="account-number" type="number" class="input rounded-xl"
+                                    placeholder="type your amount" />
+
+                                <label class="label">PIN</label>
+                                <input value="1234" id="pin" type="text" class="input rounded-xl"
+                                    placeholder="type yor PIN" required />
+                                <div><a class="link link-hover">Forgot password?</a></div>
+                                <button id="btn-login" class="btn rounded-xl bg-blue-700 text-white mt-4">Add
+                                    Money</button>
+                            </fieldset>
+
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </section>
+            </div>
+
+        </section>
+    </main>
+
 </body>
 
 </html>
