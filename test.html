@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test file</title>
+</head>
+
+<body>
+    <button id="bd-btn" class="btn">Bangladesh</button>
+    <button id="usa-btn" class="btn">USA</button>
+
+    <p id="bangla">Bangladesh</p>
+    <p id="us">USA</p>
+    <script>
+        document.getElementById("bd-btn")
+            .addEventListener("click", function () {
+                document.getElementById("bangla").style.display = "block"
+                document.getElementById("us").style.display = "none"
+            })
+
+        document.getElementById("usa-btn")
+            .addEventListener("click", function () {
+                document.getElementById("bangla").style.display = "none"
+                document.getElementById("us").style.display = "block"
+            })
+    </script>
+</body>
+
+</html>
