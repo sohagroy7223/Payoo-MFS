@@ -37,7 +37,7 @@
                     <img class="w-8 mx-auto" src=".//assets/wallet1.png" alt="">
                     <p class="text-sm mt-2">Add Money</p>
                 </div>
-                <div id="cashout"
+                <div id="cashout-div"
                     class="box border p-4 text-center rounded-sm cursor-pointer hover:bg-gray-300 hover:animate-pulse">
                     <img class="w-8 mx-auto" src=".//assets/send1.png" alt="">
                     <p class="text-sm mt-2">Cashout</p>
@@ -101,25 +101,24 @@
         </section>
 
         <section id="cashout-section">
-            <h2 class="font-bold text-xl">Cashout</h2>
+            <h2 class="font-bold text-xl">CashOut</h2>
             <div class="">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
                             <fieldset class="fieldset">
                                 <label class="label">Account Number</label>
-                                <input value="01311976179" id="account-number" type="number" class="input rounded-xl"
+                                <input value="01311976179" id="number" type="number" class="input rounded-xl"
                                     placeholder="Account Number" required />
 
                                 <label class="label">amount</label>
-                                <input id="amount" type="number" class="input rounded-xl"
+                                <input id="input-amount" type="number" class="input rounded-xl"
                                     placeholder="type your amount" />
-
                                 <label class="label">PIN</label>
                                 <input value="1234" id="pin" type="text" class="input rounded-xl"
                                     placeholder="type yor PIN" required />
                                 <div><a class="link link-hover">Forgot password?</a></div>
-                                <button type="submit" id="add-money"
+                                <button type="submit" id="cashout"
                                     class="btn rounded-xl bg-blue-700 text-white mt-4">Withdraw Money</button>
                             </fieldset>
                         </div>
@@ -131,6 +130,7 @@
     <!-- <script src="./script/addMoney.js"></script> -->
     <script src="./script/recap.js"></script>
     <script src="./script/toggle.js"></script>
+    <script src="./script/cashout.js"></script>
 </body>
 
 </html>
