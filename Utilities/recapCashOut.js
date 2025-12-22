@@ -12,7 +12,8 @@ document.getElementById("cashout-btn")
         if (accountNumber.length === 11) {
             if (pin === 1234) {
                 const subtract = mainBalance - cashoutAmount
-                document.getElementById("main-balances").innerText = subtract
+                // document.getElementById("main-balances").innerText = subtract
+                setEnnerTextByIdAndValu("main-balances", subtract)
             } else {
                 alert("incorrect your pin number")
             }

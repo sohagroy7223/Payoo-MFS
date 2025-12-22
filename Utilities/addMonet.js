@@ -10,7 +10,8 @@ document.getElementById("add-money-btn")
         if (accountNumber.length === 11) {
             if (pin === 1234) {
                 const sum = mainBalance + inputAmount
-                document.getElementById("main-balances").innerText = sum
+                // document.getElementById("main-balances").innerText = sum
+                setEnnerTextByIdAndValu("main-balances", sum)
             }
             else {
                 alert("incorrect your pin number")
