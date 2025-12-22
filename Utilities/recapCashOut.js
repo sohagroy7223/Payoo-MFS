@@ -14,6 +14,14 @@ document.getElementById("cashout-btn")
                 const subtract = mainBalance - cashoutAmount
                 // document.getElementById("main-balances").innerText = subtract
                 setEnnerTextByIdAndValu("main-balances", subtract)
+
+                const p = document.createElement("p")
+                p.innerText = `
+                cashout ${cashoutAmount} from ${accountNumber} number
+                `
+                const Transaction = document.getElementById("Transaction-container")
+                Transaction.appendChild(p)
+
             } else {
                 alert("incorrect your pin number")
             }
