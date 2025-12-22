@@ -16,7 +16,7 @@
                 <div class="flex justify-between gap-2">
                     <img class="w-16 cursor-auto" src="./assets/Group.png" alt="">
                     <div>
-                        <h2 class="font-bold text-2xl">$ <span id="main-balance">4500</span></h2>
+                        <h2 class="font-bold text-2xl">$ <span id="main-balances">4500</span></h2>
                         <h4 class="text-gray-600">Available Balance</h4>
                     </div>
                 </div>
@@ -84,14 +84,14 @@
                                     placeholder="Account Number" required />
 
                                 <label class="label">amount</label>
-                                <input id="amount" type="number" class="input rounded-xl"
+                                <input id="input-amount" type="number" class="input rounded-xl"
                                     placeholder="type your amount" />
 
                                 <label class="label">PIN</label>
                                 <input value="1234" id="pin" type="text" class="input rounded-xl"
                                     placeholder="type yor PIN" required />
                                 <div><a class="link link-hover">Forgot password?</a></div>
-                                <button type="submit" id="add-money"
+                                <button type="submit" id="add-money-btn"
                                     class="btn rounded-xl bg-blue-700 text-white mt-4">Add
                                     Money</button>
                             </fieldset>
@@ -101,7 +101,7 @@
             </div>
         </section>
 
-        <section id="cashout-section">
+        <!-- <section id="cashout-section">
             <h2 class="font-bold text-xl">CashOut</h2>
             <div class="">
                 <div class="hero-content flex-col lg:flex-row-reverse">
@@ -126,12 +126,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <!-- <script src="./script/addMoney.js"></script> -->
-    <script src="./script/recap.js"></script>
-    <script src="./script/toggle.js"></script>
-    <script src="./script/cashout.js"></script>
+    <script src="./utilities.js"></script>
+    <script src="./addMonet.js"></script>
+    <!-- <script src="./recapCashOut.js"></script>
+    <script src="./toggle.js"></script> -->
 </body>
 
 </html>

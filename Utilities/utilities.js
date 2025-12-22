@@ -9,3 +9,5 @@ function getInnerTextById(id) {
     const convertedValue = parseFloat(value)
     return convertedValue
 }
+
+
