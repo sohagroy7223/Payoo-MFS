@@ -11,7 +11,6 @@ document.getElementById("cashout-btn")
 
         const number = document.getElementById("number").value
 
-
         if (number.length === 11 && convertPin === 1234) {
             const subtract = convertMainBalance - convertAmount
             document.getElementById("main-balance").innerText = subtract
