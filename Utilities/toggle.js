@@ -1,4 +1,5 @@
 document.getElementById("cashout-section").style.display = "none"
+document.getElementById("transaction-section").style.display = "none"
 
 
 document.getElementById("cashout-div")
@@ -6,15 +7,25 @@ document.getElementById("cashout-div")
 
         hendelToggle("cashout-section", "block")
         hendelToggle("add-money-section", "none")
+        hendelToggle("transaction-section", "none")
 
     })
 
 document.getElementById("add-money-div")
     .addEventListener("click", function () {
 
-        hendelToggle("cashout-section", "none")
         hendelToggle("add-money-section", "block")
+        hendelToggle("cashout-section", "none")
+        hendelToggle("transaction-section", "none")
 
     })
 
 
+document.getElementById("Transactions-div")
+    .addEventListener("click", function () {
+
+        hendelToggle("transaction-section", "block")
+        hendelToggle("cashout-section", "none")
+        hendelToggle("add-money-section", "none")
+
+    })

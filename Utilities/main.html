@@ -56,7 +56,8 @@
                     <img class="w-8 mx-auto" src=".//assets/purse1.png" alt="">
                     <p class="text-sm mt-2">Pay Bill</p>
                 </div>
-                <div class="box border p-4 text-center rounded-sm cursor-pointer hover:bg-gray-300 hover:animate-pulse">
+                <div id="Transactions-div"
+                    class="box border p-4 text-center rounded-sm cursor-pointer hover:bg-gray-300 hover:animate-pulse">
                     <img class="w-8 mx-auto" src=".//assets/transaction1.png" alt="">
                     <p class="text-sm mt-2">Transactions</p>
                 </div>
@@ -64,7 +65,7 @@
         </section>
 
         <section id="add-money-section">
-            <h2 class="font-bold text-xl">Add Money</h2>
+            <h2 class="font-bold text-xl mt-3">Add Money</h2>
             <div class="">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <div class="card w-full max-w-sm shrink-0 shadow-2xl">
@@ -103,7 +104,7 @@
         </section>
 
         <section id="cashout-section">
-            <h2 class="font-bold text-xl">CashOut</h2>
+            <h2 class="font-bold text-xl mt-3">CashOut</h2>
             <div class="">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <div class="card w-full max-w-sm shrink-0 shadow-2xl">
@@ -130,67 +131,23 @@
         </section>
 
         <section id="transaction-section">
-            <div class="flex justify-between">
-                <h2 class="font-bold text-lg">Transaction History</h2>
+            <div class="flex justify-between mt-3">
+                <h2 class="font-bold text-xl">Transaction History</h2>
                 <p class="text-sm text-gray-600">View All</p>
             </div>
 
-            <div class="card mt-6 gap-3 ">
-                <div class="flex bg-white rounded-lg w-full h-16 p-4 gap-3 justify-between items-center">
-                    <div class="flex gap-2">
-                        <img class="w-10 bg-gray-200 border-none  border p-2 rounded-full " src="./assets/wallet1.png"
-                            alt="">
-                        <div>
-                            <h3 class="font-semibold text-base">Electricity Bill</h3>
-                            <p class="text-xs text-gray-500">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-ellipsis "></i>
-                </div>
 
-                <div class="flex bg-white rounded-lg w-full h-16 p-4 gap-3 justify-between items-center">
-                    <div class="flex gap-2">
-                        <img class="w-10 bg-gray-200 border-none  border p-2 rounded-full " src="./assets/wallet1.png"
-                            alt="">
-                        <div>
-                            <h3 class="font-semibold text-base">Bank Deposit</h3>
-                            <p class="text-xs text-gray-500">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-ellipsis "></i>
-                </div>
-
-                <div class="flex bg-white rounded-lg w-full h-16 p-4 gap-3 justify-between items-center">
-                    <div class="flex gap-2">
-                        <img class="w-10 bg-gray-200 border-none  border p-2 rounded-full " src="./assets/wallet1.png"
-                            alt="">
-                        <div>
-                            <h3 class="font-semibold text-base">Mobile Recharge</h3>
-                            <p class="text-xs text-gray-500">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-ellipsis "></i>
-                </div>
-
-                <div class="flex bg-white rounded-lg w-full h-16 p-4 gap-3 justify-between items-center">
-                    <div class="flex gap-2">
-                        <img class="w-10 bg-gray-200 border-none  border p-2 rounded-full " src="./assets/wallet1.png"
-                            alt="">
-                        <div>
-                            <h3 class="font-semibold text-base">Gas Bill</h3>
-                            <p class="text-xs text-gray-500">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-ellipsis "></i>
-                </div>
+            <div id="Transaction-container" class=" bg-white rounded-lg   p-2  ">
 
             </div>
+
         </section>
     </main>
     <script src="./utilities.js"></script>
-    <script src="./addMonet.js"></script>
+    <script src="./addMoney.js"></script>
     <script src="./toggle.js"></script>
     <script src="./recapCashOut.js"></script>
+    <script src="./Transaction.js"></script>
 </body>
 
 </html>
