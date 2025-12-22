@@ -10,7 +10,7 @@ function getInnerTextById(id) {
     return convertedValue
 }
 
-function setEnnerTextByIdAndValu(id, value) {
+function (id, value) {
     document.getElementById(id).innerText = value
 }
 
