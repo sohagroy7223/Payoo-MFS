@@ -1,16 +1,20 @@
 document.getElementById("cashout-section").style.display = "none"
 
-document.getElementById("add-money-div")
-    .addEventListener("click", function () {
-        document.getElementById("add-money-section").style.display = "block"
-        document.getElementById("cashout-section").style.display = "none"
-
-    })
 
 document.getElementById("cashout-div")
     .addEventListener("click", function () {
-        document.getElementById("add-money-section").style.display = "none"
-        document.getElementById("cashout-section").style.display = "block"
+
+        hendelToggle("cashout-section", "block")
+        hendelToggle("add-money-section", "none")
 
     })
-alert()
+
+document.getElementById("add-money-div")
+    .addEventListener("click", function () {
+
+        hendelToggle("cashout-section", "none")
+        hendelToggle("add-money-section", "block")
+
+    })
+
+

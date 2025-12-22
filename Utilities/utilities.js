@@ -11,3 +11,7 @@ function getInnerTextById(id) {
 }
 
 
+function hendelToggle(id, status) {
+    document.getElementById(id).style.display = status
+}
+
