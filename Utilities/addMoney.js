@@ -9,7 +9,8 @@ document.getElementById("add-money-btn")
         const pin = getInputValueById("pin")
         const accountNumber = document.getElementById("account-number").value
 
-        const Transaction = document.getElementById("Transaction-container")
+        const selectBank = document.getElementById("allBank").value
+
 
         if (inputAmount < 0) {
             alert("please add positive number")
@@ -22,13 +23,15 @@ document.getElementById("add-money-btn")
                 // document.getElementById("main-balances").innerText = sum
                 setEnnerTextByIdAndValu("main-balances", sum)
 
-
-                const p = document.createElement("p");
-                p.style.color = "blue"
-                p.innerText = `
-                    addad ${inputAmount} from ${accountNumber} account
+                const Transaction = document.getElementById("Transaction-container")
+                const div = document.createElement("div")
+                div.innerHTML = `
+                    <h1 class = "text-yellow-700"> added money from ${selectBank}</h1>
+                    <h3 class = "text-green-700">${inputAmount}</h3>
+                    <p class = "text-blue-700">account number ${accountNumber}</p>
                 `
-                Transaction.appendChild(p)
+                Transaction.appendChild(div)
+
             }
             else {
                 alert("incorrect your pin number")

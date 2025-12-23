@@ -9,7 +9,9 @@ document.getElementById("cashout-btn")
         const pin = getInputValueById("pin")
         const accountNumber = document.getElementById("number").value
 
-        if (mainBalance < 0) {
+
+
+        if (mainBalance < cashoutAmount) {
             alert("check your balance")
             return;
         }
