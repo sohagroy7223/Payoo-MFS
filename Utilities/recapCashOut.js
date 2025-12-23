@@ -9,6 +9,11 @@ document.getElementById("cashout-btn")
         const pin = getInputValueById("pin")
         const accountNumber = document.getElementById("number").value
 
+        if (mainBalance < 0) {
+            alert("check your balance")
+            return;
+        }
+
         if (accountNumber.length === 11) {
             if (pin === 1234) {
                 const subtract = mainBalance - cashoutAmount
@@ -16,6 +21,7 @@ document.getElementById("cashout-btn")
                 setEnnerTextByIdAndValu("main-balances", subtract)
 
                 const p = document.createElement("p")
+                p.style.color = "blue"
                 p.innerText = `
                 cashout ${cashoutAmount} from ${accountNumber} number
                 `

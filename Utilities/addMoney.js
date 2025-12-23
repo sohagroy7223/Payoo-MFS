@@ -11,6 +11,11 @@ document.getElementById("add-money-btn")
 
         const Transaction = document.getElementById("Transaction-container")
 
+        if (inputAmount < 0) {
+            alert("please add positive number")
+            return;
+        }
+
         if (accountNumber.length === 11) {
             if (pin === 1234) {
                 const sum = mainBalance + inputAmount
@@ -19,6 +24,7 @@ document.getElementById("add-money-btn")
 
 
                 const p = document.createElement("p");
+                p.style.color = "blue"
                 p.innerText = `
                     addad ${inputAmount} from ${accountNumber} account
                 `
