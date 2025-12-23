@@ -130,6 +130,33 @@
             </div>
         </section>
 
+        <section id="cashout-section">
+            <h2 class="font-bold text-xl mt-3">CashOut</h2>
+            <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <fieldset class="fieldset">
+                                <label class="label">Account Number</label>
+                                <input value="01311976179" id="number" type="number" class="input rounded-xl"
+                                    placeholder="Account Number" required />
+
+                                <label class="label">amount</label>
+                                <input id="cashout-amount" type="number" class="input rounded-xl"
+                                    placeholder="type your amount" />
+                                <label class="label">PIN</label>
+                                <input value="1234" id="cashout-pin" type="text" class="input rounded-xl"
+                                    placeholder="type yor PIN" required />
+                                <div><a class="link link-hover">Forgot password?</a></div>
+                                <button type="submit" id="cashout-btn"
+                                    class="btn rounded-xl bg-blue-700 text-white mt-4">Withdraw Money</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="transaction-section">
             <div class="flex justify-between mt-3">
                 <h2 class="font-bold text-xl">Transaction History</h2>
