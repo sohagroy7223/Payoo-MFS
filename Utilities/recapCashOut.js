@@ -18,17 +18,22 @@ document.getElementById("cashout-btn")
 
         if (accountNumber.length === 11) {
             if (pin === 1234) {
-                const subtract = mainBalance - cashoutAmount
-                // document.getElementById("main-balances").innerText = subtract
-                setEnnerTextByIdAndValu("main-balances", subtract)
+                if (cashoutAmount) {
+                    const subtract = mainBalance - cashoutAmount
+                    // document.getElementById("main-balances").innerText = subtract
+                    setEnnerTextByIdAndValu("main-balances", subtract)
 
-                const p = document.createElement("p")
-                p.style.color = "blue"
-                p.innerText = `
+                    const p = document.createElement("p")
+                    p.style.color = "blue"
+                    p.innerText = `
                 cashout ${cashoutAmount} from ${accountNumber} number
                 `
-                const Transaction = document.getElementById("Transaction-container")
-                Transaction.appendChild(p)
+                    const Transaction = document.getElementById("Transaction-container")
+                    Transaction.appendChild(p)
+                }
+                else {
+                    alert("add your amount")
+                }
 
             } else {
                 alert("incorrect your pin number")

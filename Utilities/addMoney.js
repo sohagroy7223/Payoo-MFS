@@ -19,18 +19,23 @@ document.getElementById("add-money-btn")
 
         if (accountNumber.length === 11) {
             if (pin === 1234) {
-                const sum = mainBalance + inputAmount
-                // document.getElementById("main-balances").innerText = sum
-                setEnnerTextByIdAndValu("main-balances", sum)
+                if (inputAmount) {
+                    const sum = mainBalance + inputAmount
+                    // document.getElementById("main-balances").innerText = sum
+                    setEnnerTextByIdAndValu("main-balances", sum)
 
-                const Transaction = document.getElementById("Transaction-container")
-                const div = document.createElement("div")
-                div.innerHTML = `
+                    const Transaction = document.getElementById("Transaction-container")
+                    const div = document.createElement("div")
+                    div.innerHTML = `
                     <h1 class = "text-yellow-700"> added money from ${selectBank}</h1>
                     <h3 class = "text-green-700">${inputAmount}</h3>
                     <p class = "text-blue-700">account number ${accountNumber}</p>
                 `
-                Transaction.appendChild(div)
+                    Transaction.appendChild(div)
+                }
+                else {
+                    alert("add your amount")
+                }
 
             }
             else {
